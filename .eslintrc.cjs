@@ -15,4 +15,17 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  settings: {
+    'import/resolver': {
+      vite: {
+        alias: {
+          map: [
+            ['atoms', './src/atoms'],
+            ['molecules', './src/molecules'],
+            ['organisms', './src/organisms'],
+          ],
+        },
+      },
+    },
+  },
 }

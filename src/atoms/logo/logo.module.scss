@@ -1,0 +1,19 @@
+@use '../../styles/variables' as variables;
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-block: 16px;
+
+  &__img {
+    height: 32px;
+  }
+
+  &__text {
+    color: white;
+    span {
+      color: variables.$secondary;
+    }
+  }
+}

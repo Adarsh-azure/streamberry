@@ -1,0 +1,39 @@
+@use "../../styles/variables" as var;
+@use "../../styles/animations" as *;
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var.$padding-desktop;
+  background: var.$primary;
+
+  &__navs {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__nav {
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+
+    &:hover {
+      animation: scaleAnimation .3s ease-in-out 1 forwards;
+      background-color: rgba($color: #000000, $alpha: 0.03);
+    }
+    &:last-of-type {
+      margin-right: 38px;
+    }
+    &--active {
+      background-color: rgba($color: #000000, $alpha: 0.03);
+      transform: scale(1.1);
+    }
+  }
+}

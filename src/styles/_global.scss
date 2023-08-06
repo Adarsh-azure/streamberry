@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Segoe";
+  src: url(/src/assets/fonts/Segoe\ UI.ttf);
+  weight: 400;
+};
+@font-face {
+  font-family: "Segoe";
+  src: url(/src/assets/fonts/Segoe\ UI\ Bold.ttf);
+  weight: 600;
+};
+@font-face {
+  font-family: "Segoe";
+  src: url(/src/assets/fonts/Segoe\ UI\ Italic.ttf);
+  font-style: italic;
+};
+@font-face {
+  font-family: "lemon";
+  src: url(/src/assets/fonts/Lemon\ Tuesday.otf);
+};
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Segoe;
+}
+
